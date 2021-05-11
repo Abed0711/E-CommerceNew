@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".regestrationActivity">
+    tools:context=".ZeroPage">
 
     <View
         android:id="@+id/topView"
@@ -28,13 +28,13 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="@+id/topView"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_person"
-        android:contentDescription="TODO"
+        app:srcCompat="@drawable/ic_online_shopping"
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
@@ -44,7 +44,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="48dp"
-        android:text="Don't Have an Account?"
+        android:text="Shop Online"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -53,84 +53,93 @@
         app:layout_constraintStart_toStartOf="@+id/topView"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/UserName"
+    <Button
+        android:id="@+id/hometoJoin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="320dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:background="@drawable/round_border"
-        android:drawableLeft="@drawable/ic_id"
-        android:drawablePadding="16dp"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="text"
-        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_bg"
+        android:text="Join Now"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/hometoLogin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view3" />
 
-    <EditText
-        android:id="@+id/inputUserMobileNumber"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:background="@drawable/round_border"
-        android:drawableLeft="@drawable/ic_phone"
-        android:drawablePadding="16dp"
-        android:ems="10"
-        android:hint="Mobile Number"
-        android:inputType="text"
-        android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UserName" />
-
-    <EditText
-        android:id="@+id/inputPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:background="@drawable/round_border"
-        android:drawableLeft="@drawable/ic_baseline_lock_24"
-        android:drawablePadding="16dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputUserMobileNumber" />
-
     <Button
-        android:id="@+id/create_id"
+        android:id="@+id/hometoLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/round_bg"
-        android:text="Create"
+        android:text="Already have an Account ? Login"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/hometoJoin"
+        app:layout_constraintVertical_bias="0.242" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:srcCompat="@drawable/ic_s" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:srcCompat="@drawable/ic_h" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:srcCompat="@drawable/ic_letter_o" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="76dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="74dp"
+        app:layout_constraintBottom_toTopOf="@+id/hometoJoin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_parking" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
